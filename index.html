@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Coding Journey</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #1e293b;
+      padding: 10px 0;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      color: #93c5fd;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav button:hover {
+      color: #fff;
+    }
+
+    .section {
+      display: none;
+      padding: 40px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .active {
+      display: block;
+    }
+
+    h2 {
+      color: #38bdf8;
+    }
+
+    .timeline {
+      border-left: 4px solid #38bdf8;
+      padding-left: 20px;
+      margin-left: 10px;
+    }
+
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+
+    .img-box {
+      margin: 20px 0;
+      text-align: center;
+     
+    }
+
+    .img-box img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+      
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e293b;
+      color: #cbd5e1;
+      font-size: 0.9em;
+    }
+    
+  details {
+  padding: 10px;
+  background-color: #004175;
+  border-radius: 5px;
+  
+}
+summary {
+  list-style-position: outside;
+  margin-left: 30px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px;
+  list-style-type: '⬇ ';
+  
+}
+
+details[open] > summary {
+  list-style-type: '⬆ ';color: #38bdf8;
+}
+details > summary {
+  transition: color 1s;
+}
+::marker {
+ 
+  font-size: 2rem;
+}
+ul{border: 2px solid white;
+border-radius: 5px;
+}
+
+
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+    .he{width:200px;box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);}
+    .wow{float:left;box-shadow: 0 0 10px 10px rgba(0, 125, 163, 0.5); }
+    .first{ width:650px; padding-left:250px;border:2px dashed white;margin:50px }
+    .he:hover{box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5); }
+    .wow2{width:50px}
+    .gif{flex-wrap: wrap;}
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Coding Journey</h1>
+    <p>From Java to Web Design — Growing as a Developer</p>
+    <h6>-Nahom-</h6>
+  </header>
+
+  <nav>
+    <button onclick="showSection('about')">About Me</button>
+    <button onclick="showSection('journey')">My Journey</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('contact')">Contact</button>
+    <button onclick="showSection('extra')">Extra</button>
+  </nav>
+
+  <section id="about" class="section active">
+    <section>
+    <h2>About Me</h2>
+
+    <div class="img-box">
+      <img class="wow" src="IMG_8094.jpg">
+      
+    </div>    <p class="first">Hi there! My name is Nahom and I am a very determined high school student with a strong interest in technology and programming. In the last three years, I have taken many computer science courses that have transformed my perspective on software development. From writing my first Java program and experiencing the thrill of seeing my code come to life, to mastering object-oriented programming principles that taught me how to architect robust solutions, to jumping into web development through creating interactive websites with HTML, CSS, and JavaScript - each step has been more exciting than the last. These varied experiences have not only enhanced my technical skills but have also taught me valuable lessons about problem-solving, persistence, and the importance of continuous learning. I've discovered that programming is more than just writing code - it's about creating solutions that can make a real difference. I'm particularly fascinated by how technology can be used to solve real-world problems and improve people's lives. As I continue my journey in software development, I'm excited to explore more advanced concepts and technologies, and to eventually contribute to meaningful projects that can have a positive impact on society.</p>
+    
+    
+  </section>
+<img class="wow2" src="mem.png"></section>
+  <section id="journey" class="section">
+    <h2>My Programming Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>9th Grade - Java (Mrs. Pathan)</h3>
+        <p>My first experience with programming was truly eye-opening. I learned the fundamental building blocks like loops, variables, and conditionals in Java, which helped me understand how computers process instructions. I still remember the excitement of writing my first 'Hello World' program and seeing it run successfully! Through hands-on practice, I created programs that could perform calculations, process user input, and even built a simple text-based game that taught me how to think logically and solve problems step by step</p>
+        <div class="img-box" style="text-align: left;">
+          <a href="https://www.w3schools.com/java/java_intro.asp" target="_blank"><img class="he" src="https://maritvandijk.com/wp-content/uploads/2022/08/java_logo_icon_168609.png"></a>
+          <a href="https://www.w3schools.com/java/java_intro.asp" target="_blank"> <h6>Click to learn more</h6></a>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <h3>10th Grade - Object Oriented Programming (Mr. Dal)</h3>
+        <p>This class helped me understand how to build organized programs using concepts like classes, inheritance, and encapsulation. Learning these principles transformed how I approach software development - instead of writing monolithic code, I learned to break down complex problems into manageable, reusable components. I applied these concepts by creating a student management system where I used inheritance to handle different types of users and encapsulation to protect sensitive data. This project showed me how proper organization makes code more maintainable and scalable.</p>
+        <div class="img-box" style="text-align: left;">
+          <a href="https://www.w3schools.com/java/java_oop.asp" target="_blank"><img class="he" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1729679277832/18ab2f5b-0636-44e7-b063-0773e5039fb0.png"></a>
+          <a href="https://www.w3schools.com/java/java_oop.asp" target="_blank"> <h6>Click to learn more</h6></a>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <h3>11th Grade - Web Design (Mrs. Pathan)</h3>
+        <p>Currently learning HTML, CSS, and JavaScript, and I'm amazed by how these technologies work together to create engaging user experiences. I'm building websites that are responsive and interactive! My projects include a personal portfolio that adapts seamlessly to different screen sizes and a dynamic to-do list application that uses local storage to persist data. I've also experimented with animations and transitions to make my websites more engaging. The immediate visual feedback of web development is incredibly satisfying, and I love how it combines creativity with technical skills.</p>
+        <div class="img-box" style="text-align: left;">
+          <a href="https://www.w3schools.com/html/" target="_blank"><img class="he" src="https://cdn.prod.website-files.com/64103d21294ba09537b876c8/66192dc732c0cc99ef8d408c_Rby-1kw-kxwwW5L1P69TkTzuwph4pC8iDOvyqj0dl3USv7lZ29v3vJ1ubJIPZ5DmISjoTGJENzjKzdSQmONbQM79CTyCAHlhhhsVPocfeflaAg6HXf1gjInugM8VhThoc3yVGWcYEBQCBcfTAcMiqI8.png"></a>
+          <a href="https://www.w3schools.com/html/" target="_blank"> <h6>Click to learn more</h6></a>
+        </div>
+
+
+       
+        
+        <details><summary><h2>Click to see some of my favorite projects I've created during Web Design class</h2></summary>
+        <div class="gallery">
+          <img src="prjct1.png" alt="Project 1">
+          <img src="images.png" alt="Project 2">
+          <img src="apple.png" alt="Project 3">
+          <img src="coursefeedback.png" alt="Project 4">
+          <img src="musvid.png" alt="Project 5">
+          <img src="port.png" alt="Project 6">
+          <img src="lion.png" alt="Project 7">
+          <img src="cdeton.png" alt="Project 8">
+          <img src="newyr.png" alt="Project 9">
+        </div></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills I've Learned</h2>
+      
+      <ul>
+        <li>Java Programming (Core Concepts)</li>
+        <li>Object-Oriented Programming</li>
+        <li>HTML5 & Semantic Structure</li>
+        <li>CSS3 & Responsive Design</li>
+        <li>JavaScript (DOM, Interactivity)</li>
+        <li>Debugging, Testing & UI Design</li>
+      </ul>
+    
+    <div><details><summary><h2>Here is my past Codeathon project<img style="width:80px" class="gif" src="gif.gif"></h2></summary>
+    
+    <div class="img-box">
+      <a href="https://nahomhsach.github.io/Codeathon-Product/" target="_blank"><img src="cthonprj.png"></a>
+    </div></details></div>
+  </section>
+
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Want to connect with me or learn more about my work?</p>
+    <p>Email me at: <a href="mailto:student.ngirmay56@hsach.org" style="color:#60a5fa;">student.ngirmay56@hsach.org</a></p>
+    <div class="img-box">
+      <img src="contactme.jpg">
+    </div>
+  </section>
+
+  <section id="extra" class="section">
+    <center><h2>Here are some slides that guide you through on how this website came to be!</h2></center>
+    <center><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSZTiXDIKUWUuqfE0JYq-70yMEaaNtS_H-34WSTEBxcIVd2FAJnhmMjLeizU1pttzwuhOXrxsNWuwFC/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></center><br>
+      <center><h2>Here is a game I have previously made for a past project. Enjoy!</h2></center>
+        <center><iframe src="https://scratch.mit.edu/projects/1129856454/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe></center>
+  </section>
+
+  <footer>
+    © 2025 My Coding Journey. Designed and coded by me!
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
