@@ -13,7 +13,7 @@
     }
 
     header {
-      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      background: linear-gradient(to right,  #000766,#0300a8, #709eff, #0300a8, #0300a8, #709eff, #0300a8, #000766);
       padding: 20px;
       text-align: center;
     }
@@ -37,17 +37,17 @@
       color: #93c5fd;
       font-size: 1.1em;
       cursor: pointer;
-      transition: color 0.3s;
+      transition: color 0.3s;padding:7px
     }
 
     nav button:hover {
-      color: #fff;
+      background: rgba(255, 255, 255, 0.795); color: #000000; border-radius: 5px;
     }
 
     .section {
       display: none;
       padding: 40px;
-      animation: fadeIn 0.5s ease;
+      animation: fadeIn 1.5s ease;
     }
 
     .active {
@@ -154,13 +154,33 @@ border-radius: 5px;
         grid-template-columns: 1fr;
       }
     }
-    .he{width:200px;box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);}
-    .wow{float:left;box-shadow: 0 0 10px 10px rgba(0, 125, 163, 0.5); }
-    .first{ width:650px; padding-left:250px;border:2px dashed white;margin:50px }
-    .he:hover{box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5); }
+    .he{width:200px;box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);transition: width 2s, height 2s, transform 2s;}
+    .wow{float:left;box-shadow: 0 0 10px 10px rgba(0, 125, 163, 0.5);animation-name: portrait;
+  animation-duration: 5s; animation-iteration-count: infinite;transition: width 2s, height 2s, transform 2s;}
+    .first{ width:650px; padding-left:250px;border:2px dashed white;margin:50px;padding-top: 10px;padding-bottom: 10px;box-shadow:10px 10px px rgb(59, 59, 59) ;animation-name: portrait2;
+  animation-duration: 5s; animation-iteration-count: infinite; }
+    .he:hover{box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.5);transform: rotate(1800deg); }
     .wow2{width:50px}
     .gif{flex-wrap: wrap;}
-    
+   .wow:hover{transform: rotate(3600deg);}
+
+@keyframes portrait {
+  0% {box-shadow: 0 0 10px 5px rgb(0, 247, 255);}
+  50% {box-shadow: 0 0 10px 5px rgb(255, 0, 0);}
+  75% {box-shadow: 0 0 10px 5px rgb(0, 195, 255);}
+  100%{box-shadow: 0 0 10px 5px rgb(0, 247, 255);}
+
+ 
+}
+@keyframes portrait2 {
+  0% {box-shadow: 0 0 10px 1px rgb(0, 247, 255);}
+  50% {box-shadow: 0 0 10px 1px rgb(255, 0, 0);}
+  75% {box-shadow: 0 0 10px 1px rgb(0, 195, 255);}
+  100%{box-shadow: 0 0 10px 1px rgb(0, 247, 255);}
+
+ 
+}
+
   </style>
 </head>
 <body>
@@ -186,7 +206,7 @@ border-radius: 5px;
     <div class="img-box">
       <img class="wow" src="IMG_8094.jpg">
       
-    </div>    <p class="first">Hi there! My name is Nahom and I am a very determined high school student with a strong interest in technology and programming. In the last three years, I have taken many computer science courses that have transformed my perspective on software development. From writing my first Java program and experiencing the thrill of seeing my code come to life, to mastering object-oriented programming principles that taught me how to architect robust solutions, to jumping into web development through creating interactive websites with HTML, CSS, and JavaScript - each step has been more exciting than the last. These varied experiences have not only enhanced my technical skills but have also taught me valuable lessons about problem-solving, persistence, and the importance of continuous learning. I've discovered that programming is more than just writing code - it's about creating solutions that can make a real difference. I'm particularly fascinated by how technology can be used to solve real-world problems and improve people's lives. As I continue my journey in software development, I'm excited to explore more advanced concepts and technologies, and to eventually contribute to meaningful projects that can have a positive impact on society.</p>
+    </div>    <p class="first">Hi there! I'm Nahom and I am a highly motivated high school student with a passion for technology and coding. Over the past three years, I have taken several computer science courses that have shifted my view of software engineering radically. I will not forget the first time that I saw my code execute a program in Java, or learned the tenets of object-oriented programming and how they propelled my ability to architect solutions, or made my very first Webpage and suddenly felt like an artist returning to interactive Web development with HTML, CSS, and JavaScript! Each experience was a building block for my technical training and knowledge, yet I came away with much broader lessons on problem-solving, perseverance and the habit of lifelong learning. I learned that programming is not simply about writing codes, it is about finding a solution that works for someone. It's about being part of something larger and spanning meaningful solutions to real problems that affect people's lives. As I continue on my software engineeering path I look forward to learning more advanced technologies and concepts, and exploring opportunities to participate in projects that benefit our society.</p>
     
     
   </section>
